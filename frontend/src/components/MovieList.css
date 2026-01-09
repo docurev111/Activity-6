@@ -1,0 +1,173 @@
+﻿.movie-list {
+  padding: 20px;
+}
+
+.movie-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.movie-list-header h2 {
+  color: #1e3c72;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.btn-add {
+  background-color: #2a5298;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(42, 82, 152, 0.2);
+}
+
+.btn-add:hover {
+  background-color: #1e3c72;
+  box-shadow: 0 4px 8px rgba(42, 82, 152, 0.3);
+  transform: translateY(-1px);
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.no-movies {
+  text-align: center;
+  padding: 60px;
+  font-size: 18px;
+  color: #999;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.movie-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e8eef5;
+}
+
+.movie-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-color: #2a5298;
+}
+
+.movie-card h3 {
+  color: #1e3c72;
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.movie-genre {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 12px 0;
+}
+
+.movie-description {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 14px;
+  background-color: #f8f9fc;
+  border-radius: 6px;
+  border: 1px solid #e8eef5;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.rating-stars .star {
+  color: #d1d5db;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.rating-stars .star.filled {
+  color: #fbbf24;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: #1e3c72;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.review-count {
+  color: #6b7280;
+  font-size: 13px;
+  margin-left: auto;
+}
+
+.movie-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-view,
+.btn-delete {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-view {
+  background-color: #2a5298;
+  color: white;
+}
+
+.btn-view:hover {
+  background-color: #1e3c72;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(42, 82, 152, 0.3);
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.3);
+}
